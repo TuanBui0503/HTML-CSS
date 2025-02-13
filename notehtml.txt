@@ -1,0 +1,80 @@
+1, HTML attributes
+- là các thuộc tính trong các thẻ html cung cấp thông tin bổ sung cho các thành phần, luôn đc đặt trong thẻ mở 
+* các thuộc tính cơ bản
++ id định danh duy nhất 1 phần tử, các phần tử k đc có id trùng nhau
++ class xác định 1 hoặc nhiều css, có thể đặt ở mọi phần tử
++ Style: dùng để đặt css trực tiếp lên phần tử
++ title: cung cấp thêm thông tin khi di chuột qua phần tử
+2, thẻ <a>
+để tạo liên kết đến các trang web khác, các phần tử trong cùng 1 trang (href ="id của phần tử")
+có thể dùng thẻ <a> bên trong thẻ img để tạo liên kết bằng hình ảnh
+- href: đường dẫn URL
+- target: cách mở liên kết gồm:
++ _blank: mở liên kết ở 1 tab mới
++ _self: mặc định, mở liên kết tại chỗ
++ _parent: mở tài liệu trong khung cha, thường được áp dụng trong các trang web sử dụng frames hoặc iframes
++ _top: còn có thể dùng trong thẻ <form> để chỉ định rằng liên kết sẽ được mở trong toàn bộ
+ cửa sổ trình duyệt, thay vì trong một khung (frame) hoặc iframe hiện tại.
+- rel: mô tả mối quan hệ với trang đích
+3, thẻ img
+- dùng để chèn hình ảnh vào trang web
+- các thuộc tính trong thẻ img 
++ src : thuộc tính bắt buộc để chỉ định nguồn của hình ảnh
++ alt : văn bản dùng khi hình ảnh không thể hiển thị được 
++ width, height: chiều rộng và chiều dài của ảnh, nếu không chỉ định chiều dài chiều rộng thì ảnh sẽ hiển thị
+đúng kích thước thật của nó ( nên dùng width height trong <style>)
++ title: cung cấp thông tin bổ sung về hình ảnh bằng cách di chuột qua hình ảnh
+4, thẻ <p>
+- để viết văn bản
+5, thẻ table
+- dùng để tạo ra 1 bảng theo kiểu hàng và cột
++ <table>: Xác định một bảng.
++ <tr> (Table Row): Xác định một hàng trong bảng.
++ <th> (Table Header): Xác định ô tiêu đề (có thể in đậm mặc định).
++ <td> (Table Data): Xác định ô dữ liệu trong bảng.
+- các thuộc tính cơ bản:
++ border: Xác định độ dày viền bảng.
++ cellspacing: Khoảng cách giữa các ô.
++ cellpadding: Khoảng cách nội dung trong ô với viền.
++ colspan: Hợp nhất nhiều cột.
++ rowspan: Hợp nhất nhiều hàng.
+
+6, thẻ ul li
+- tạo 1 danh sách không có thứ tự 
+- có các thuộc tính sau 
++ disc (mặc định): Hình tròn đầy
++ circle: Hình tròn rỗng
++ square: Hình vuông
++ none: không có gì
+ví dụ: 
+<ul type="square">
+    <li>Số 1</li>
+    <li>Số 2</li>
+</ul>
+7, thẻ ol li 
+- tạo 1 danh sách có thứ tự 
+- các thuộc tính của thẻ ol:
++ type - Xác định kiểu đánh số thứ tự:
++ 1 (mặc định): Số (1, 2, 3, ...)
++ A: Chữ cái hoa (A, B, C, ...)
++ a: Chữ cái thường (a, b, c, ...)
++ I: Số La Mã hoa (I, II, III, ...)
++ i: Số La Mã thường (i, ii, iii, ...)
+ví dụ: 
+
+- start để chỉ số bắt đầu
+- reversed đảo ngược thứ tự
+<ol type="1" start="5 reversed">
+    <li>Mục 5</li>
+    <li>Mục 6</li>
+    <li>Mục 7</li>
+</ol>
+8, thẻ div
+- thẻ dùng để tạo khối chứa các nội dung bên trong, nhóm các phần tử lại với nhau để áp dụng css và js dễ hơn
+9, thuộc tính class 
+- dùng để gán 1 hoặc nhiều class cho phần tử, nhóm các phần tử với nhau giúp ta có thể áp dụng css và js vào các phần tử
+
+10, khung iframe
+- dùng để nhét 1 trang web khác vào trang web hiện tại
+ví dụ: <iframe src="https://www.chatgpt.com" width="600" height="400" style="border: none;"></
+- các thuộc tính trong thẻ 
