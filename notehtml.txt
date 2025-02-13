@@ -76,5 +76,12 @@ ví dụ:
 
 10, khung iframe
 - dùng để nhét 1 trang web khác vào trang web hiện tại
-ví dụ: <iframe src="https://www.chatgpt.com" width="600" height="400" style="border: none;"></
-- các thuộc tính trong thẻ 
+ví dụ: <iframe src="https://www.chatgpt.com" width="600" height="400" style="border: none;"></iframe>
+- các thuộc tính trong thẻ:
++ src – Đường dẫn (URL) của tài liệu được nhúng
++ width – Chiều rộng của iframe (mặc định là pixel)
++ height – Chiều cao của iframe
++ style – Cho phép thêm CSS 
++ frameborder – Điều khiển hiển thị đường viền (giá trị 0 là không có viền, 1 là có viền)
++ allowfullscreen – Cho phép iframe hiển thị ở chế độ toàn màn hình
++ loading="lazy" – Chỉ tải iframe khi cần thiết để tối ưu hiệu suất
