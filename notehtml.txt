@@ -85,3 +85,67 @@ ví dụ: <iframe src="https://www.chatgpt.com" width="600" height="400" style="
 + frameborder – Điều khiển hiển thị đường viền (giá trị 0 là không có viền, 1 là có viền)
 + allowfullscreen – Cho phép iframe hiển thị ở chế độ toàn màn hình
 + loading="lazy" – Chỉ tải iframe khi cần thiết để tối ưu hiệu suất
+
+11, thẻ script
+- dùng để liên kết các lệnh javascript vào trong trang web giúp trang web trở nên sinh động hơn
+- nên đặt thẻ script ở sau thẻ body, hoặc tạo 1 file riêng rồi link vào
+- có thẻ <noscript> dùng để hiển thị nội dung khi trình duyệt không hỗ trợ javascript hoặc đã tắt javascript 
+( khi javascript không chạy thì thẻ noscript mới hoạt động)
+
+12, Thẻ Head
+- Nằm trên thẻ body dùng để chứa các phần tử sau <title>, <style>, <meta>, <link>, <script>, <base>
+- <title>: Để viết tiêu đề của tài liệu hiển thị trên tab của trang web, là phần tử bắt buộc
+- <style>: để viết css trực tiếp cho phần tử
+- <meta>: để cung cấp  thông tin về trang web
++ mã hóa kí tự <meta charset="UTF-8">
++ tương thích với thiết bị <meta name="viewport" content="width=device-width, initial-scale=1.0">
++ mô tả trang <meta name="description" content="Đây là trang web của tôi">
++ tác giả trang web <meta name="author" content="Nguyễn Văn A">
+- <link>: để liên kết các file hoặc url từ bên ngoài
+
+13, các phần tử có ngữ nghĩa trong html
+- là các thẻ có ý nghĩa rõ ràng về mặt nội dung, giúp dễ hiểu về vai trò từng phần
++ <header>: Phần đầu trang, thường chứa tiêu đề, logo, menu điều hướng
++ <nav>: Chứa các liên kết điều hướng
++ <main>: Nội dung chính của trang, mỗi trang chỉ có một thẻ <main>
++ <section>: Một phần nội dung có chủ đề cụ thể
++ <article>: Nội dung độc lập như bài báo, blog, tin tức
++ <aside>: Nội dung phụ, thường là sidebar (thanh bên)
++ <footer>: Chân trang, thường chứa thông tin bản quyền, liên kết mạng xã hội
+
+14, thẻ <form>
+- dùng để tạo biểu mẫu thu thập thông tin của người dùng
+- các thuộc tính của thẻ form
++ action: Xác định URL mà dữ liệu biểu mẫu sẽ được gửi đến.
+Ví dụ: action="submit.php"
++ method: Xác định phương thức gửi dữ liệu, thường là:
+      GET (mặc định) – Dữ liệu được gửi qua URL.
+      POST – Dữ liệu được gửi ẩn.
++ enctype: Được sử dụng khi gửi tệp (file).
+      multipart/form-data: Bắt buộc khi dùng <input type="file">.
++ target: Xác định nơi hiển thị phản hồi sau khi gửi biểu mẫu.
+     _self (mặc định) – Hiển thị trên trang hiện tại.
+     _blank – Mở trong tab mới.
++ autocomplete: Cho phép trình duyệt tự động điền thông tin.
+     on (mặc định) – Cho phép tự động điền.
+     off – Tắt tự động điền.
+a, thẻ input 
+- là phần tử được sử dụng nhiều nhất trong biểu mẫu
+- có thể hiện thị theo nhiều cách tùy vào type của thẻ 
+  + text: hiển thị dạng văn bản
+  + password:	ô nhập mật khẩu (ẩn ký tự)
+  + number: ô nhập số
+  + email: ô nhập email xác minh định dạng ví dụ <input type="email" required>
+  + radio: hiển thị nút radio ( để chọn 1 trong nhiều lựa chọn )
+  + checkbox: để chọn không hoặc nhiều lựa chọn
+  + submit: để hiện nút gửi biểu mẫu
+  + button: hiển thị 1 nút có thể bấm được
+  + tel: ô nhập số điện thoại
+  + url: ô  nhập đường link
+  + date: Chọn ngày
+  + time: Chọn giờ
+  + datetime-local: Chọn ngày & giờ
+  + file: Tải lên tệp
+  + range: Thanh trượt chọn giá trị số
+  + color: chọn màu
+
