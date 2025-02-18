@@ -116,7 +116,7 @@ ví dụ: <iframe src="https://www.chatgpt.com" width="600" height="400" style="
 14, thẻ <form>
 - dùng để tạo biểu mẫu thu thập thông tin của người dùng
 - các thuộc tính của thẻ form
-+ action: Xác định URL mà dữ liệu biểu mẫu sẽ được gửi đến.
++ action: Xác định URL mà dữ liệu biểu mẫu sẽ được gửi đến. (không hiểu cái này)
 Ví dụ: action="submit.php"
 + method: Xác định phương thức gửi dữ liệu, thường là:
       GET (mặc định) – Dữ liệu được gửi qua URL.
@@ -148,4 +148,58 @@ a, thẻ input
   + file: Tải lên tệp
   + range: Thanh trượt chọn giá trị số
   + color: chọn màu
+  + reset: đặt lại biểu mẫu
+  b, thẻ label
+  - dùng để mô tả nội dung của các ô nhập dữ liệu
+  ví dụ:
+  <label for="name">Họ và tên:</label>
+<input type="text" id="name" name="name">
+
+c, thẻ select và option
+- dùng để tạo danh sách thả xuống
+ví dụ
+label for="gender">Chọn giới tính:</label>
+        <select id="gender" name="gender">
+            <option value="trai">Nam</option>
+            <option value="gao">Nữ</option>
+        </select>
+d, Vùng nhập văn bản <textarea>
+- dùng để tạo 1 hộp để viết văn bản vào bên trong đó
+<label for="message">Nội dung:</label>
+<textarea id="message" name="message" rows="4"></textarea>
+e, nút bấm (button)
+- dùng để gửi hoặc đặt lại biểu mẫu
+ví dụ: 
+<button type="submit">Gửi</button>
+<button type="reset">Xóa</button>
+
+
+15, các thuộc tính đầu vào của HTML
+- thường được dùng cho thẻ input dùng để nhập dữ liệu người dùng
+a, các thuộc tính chung 
++ type xác định kiểu dữ liệu đầu vào ( đã liệt kê bên trên )
++ name đặt tên cho ô nhập, thường dùng khi gửi form
++ value: giá trị mặc định của ô nhập
++ placeholder văn bản gợi ý trong ô nhập
++ required bắt buộc người dùng nhập dữ liệu
+
+b, thuộc tính kiểm soát dữ liệu nhập
++ maxlength Giới hạn số ký tự tối đa.
+vd
+<label>Mật khẩu:</label>
+<input type="password" name="password" minlength="6" maxlength="20" required>
+(tối thiểu 6 ký tự tối đa 20 ký tự, bắt buộc phải nhập)
++ min / max Xác định giá trị tối thiểu và tối đa cho các kiểu số, ngày tháng.
+vd
+<label>Tuổi:</label>
+<input type="number" name="age" min="18" max="100" step="1">
+( input kiểu số, nhập số tuổi nhỏ nhất là 18 lớn nhất là 100, bước nhảy 1)
++ step Xác định bước nhảy giữa các giá trị (dùng cho số, ngày giờ).
++ pattern Định dạng dữ liệu theo biểu thức chính quy (regex)
+vd
+<label>Mã OTP:</label>
+<input type="text" name="otpcode" pattern="[0-9]{5}" title="Mã otp phải gồm 5 chữ số">
+pattern="[0-9]{5}" nghĩa là số từ 0-9 và chỉ đc nhập 5 số
++ readonly Chỉ đọc, không thể chỉnh sửa.
++ disabled Vô hiệu hóa ô nhập.
 
