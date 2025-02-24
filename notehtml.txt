@@ -201,5 +201,33 @@ vd
 <input type="text" name="otpcode" pattern="[0-9]{5}" title="Mã otp phải gồm 5 chữ số">
 pattern="[0-9]{5}" nghĩa là số từ 0-9 và chỉ đc nhập 5 số
 + readonly Chỉ đọc, không thể chỉnh sửa.
+vd:
+<label for="fname">First name:</label><br>
+  <input type="text" name="fistname" value="Tuấn" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" name="lastname" value="Bùi"><br>
 + disabled Vô hiệu hóa ô nhập.
+<input type="text" name="fistname" value="Tuấn" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" name="lastname" value="Bùi"><br>
 
+16, Thẻ video
+- dùng để đưa video vào trang web 
+ví dụ:
+<video width="400" height="300" controls>
+        <source src="./video/mov_bbb.mp4" type="video/mp4">
+     </video>
+- các thuộc tính có trong thẻ video
++ controls: giúp hiển thị các nút phát/dừng, tua video, phóng to...
++ source: xác định nguồn của video, có thể dùng nhiều thẻ source để hỗ trợ nhiều định dạng khác nhau
++ type="video/mp4" dùng để xác định loại tệp video
+- các thuộc tính quan trọng khác:
++ autoplay: tự động phát video
++ loop: lặp lại video sau khi kết thúc
++ muted: tắt tiếng video mặc định
++ poster="image.jpg": hiển thị ảnh đại diện trước khi video phát
+
+
+17, thẻ audio
+- để chèn 1 đoạn âm thanh vào trang web
+- các thuộc tính đều giống với thẻ video
