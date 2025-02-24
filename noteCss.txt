@@ -1,0 +1,31 @@
+1, Nền trong CCS
+- Gồm các thuộc tính sau:
++ background-color: màu nền
+ví dụ: 
+body {
+  background-color: red;
+}
+
++ background-image: ảnh Nền
+ví dụ:
+body {
+  background-image: url('img.jpg');
+}
+
++ background-repeat: lặp lại hình Nền
+ví dụ:
+body {
+  background-repeat: no-repeat; (không lặp hình nền)
+}
+có thể có  repeat ( lặp hình nền), repeat-x(lặp theo chiều ngang), repeat-y(lặp theo chiều dọc)
+
++ background-size: kích thước hình nền 
+có các thuộc tính: 
+auto(mặc định) giữ nguyên kích thước của ảnh nền
+cover: che phủ toàn bộ phần tử, nếu tỉ lệ ảnh khác tỉ lệ phần tử nó có thể bị cắt 1  phần, giữ nguyên tỉ
+lệ ảnh mà không bị méo hình, dùng khi muốn phủ hết phần tử nhưng không bị méo
+contain: hình nền sẽ co giãn sao cho hình ảnh hiển thị đầy đủ, có thể để lại khoảng trống nếu khác tỉ lệ
+phần tử, dùng khi muốn hiển thị toàn bộ hình ảnh mà không bị cắt
+
++ background-attachment: quyết định hình nền có cuộn theo trang web hay giữ cố định khi lướt trang
+
