@@ -1,8 +1,19 @@
-h2{
-    background-color: brown;
+h2 {
+    background: brown url(./img/cầy.jpg) no-repeat scroll center top;
+    height: 800px;
 }
-body {
-    /* background-image: url("./img/0cb875e5fae5d1074bc66270c7d519e6.jpg"); */
-    background-position: center top;
-  }
-  
+
+.box {
+    display: flex;
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(255, 0, 0);
+}
+
+body {}
