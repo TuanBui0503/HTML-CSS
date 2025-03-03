@@ -28,4 +28,73 @@ contain: hình nền sẽ co giãn sao cho hình ảnh hiển thị đầy đủ
 phần tử, dùng khi muốn hiển thị toàn bộ hình ảnh mà không bị cắt
 
 + background-attachment: quyết định hình nền có cuộn theo trang web hay giữ cố định khi lướt trang
+   ví dụ:
+   body {
+    background-attachment: fixed;   (Hình nền cố định ngay cả khi cuộn chuột xuống, hình nền sẽ cuộn xuống
+    cùng với nội dung, giống thuộc tính position fixed)
+    background-attachment: scroll; (mặc định, hình nền vẫn ở vị trí cũ không cuộn xuống theo nội dung)
+    background-attachment: local;  (hình nền cuộn theo nội dung của phần tử, khi nội dung có thanh cuộn thì 
+    hình nền sẽ cuộn theo nội dung)
+   }
+- có thể viết tắt các thuộc tính hình nền trong thuộc tính "background" theo thứ tự(không quan trọng bị thiếu thuộv
+tính gì cứ theo thứ tự):
+   + background-color
+   + background-image
+   + background-repeat
+   + background-attachment
+   + background-position
 
+2, Đường viền (boder)
+- chỉ định các loại đường viền được hiển thị bao gồm 
++ dotted:  xác định đường viền chấm bi
++ dashed:  xác định đường viền đứt nét
++ solid:  xác định đường viền liền
++ double:  xác định đường viền kép
++ groove:  xác định đường viền có rãnh 3D, hiệu ứng phụ thuộc vào giá trị border-color
++ ridge:  xác định đường viền có gờ 3D, hiệu ứng phụ thuộc vào giá trị border-color
++ inset:  xác định đường viền 3D chìm vào trong , hiệu ứng phụ thuộc vào giá trị border-color
++ outset: xác định đường viền 3D nổi ra ngoài, hiệu ứng phụ thuộc vào giá trị border-color
++ none không Xác định đường viền
++ hidden xác định đường viền ẩn
+
+- có thể đặt viền riêng lẻ cho từng cạnh bằng boder-top-bottom-right-left
+- có thể dùng để tạo viền bo tròn bằng thuộc tính boder-radius
+  ví dụ: 
+  box1 {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+- có thể viết tắt theo thứ tự boder-width -> boder-style -> boder-color 
+ví dụ: boder: 2px solid black;
+
+3, Lề (margin)
+- Tạo khoảng trống bên ngoài phần tử, giúp kiểm soát khoảng cách giữa các phần tử trong trang web
+- Các thuộc tính điều chỉnh lề của từng phía:
+ + margin-top
+ + margin-right
+ + margin-bottom
+ + margin-left
+ có thể viết tắt theo thứ tự top-right-bottom-left (theo chiều kim đồng hồ)
+ ví dụ: margin: 25px 50px 75px 100px
+        margin: 25px 50px 75px ( đối với 3 giá trị như này thì top=25px, trái phải= 50px, dưới=100px)
+        margin: 0 25px (đối với 2 phần tử thì tham số đầu tiên sẽ là top-bot, tham số thứ 2 là right-left,)
+
+- có thể dùng để căn giữa phần tử bằng cách sử dụng margin: auto, điều kiện là phần tử phải có chiều rộng width cố định
+phần tử không phải inline
+ví dụ: box1 {
+    width: 300px;
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+}
+- margin có thể là số âm để kéo phần tử lại gần phần tử khác 
+div {
+    margin-top: -20px; /* Dịch lên trên 20px */
+}
+- khi 2 margin của 2 phần tử chạm nhau thì nó có thể bị gộp lại chứ không cộng dồn
+
+4, Padding
+- Dùng để xác định khoảng cách giữa nội dung bên trong phần tử và viền (boder) của nó
+- Các thuộc tính điều chỉnh lề của từng phía:
+ + padding-top
+ + padding-right
+ + padding-bottom
+ + padding-left
